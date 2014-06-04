@@ -1,0 +1,51 @@
+/* 
+ * A trick to style the camera input element. 
+ * See http://geniuscarrier.com/how-to-style-a-html-file-upload-button-in-pure-css/
+ */
+#camera-button {
+  position: relative;
+  overflow: hidden;
+}
+
+#camera-button input {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  font-size: 999px !important;
+  cursor: inherit !important;
+  opacity: 0 !important;
+}
+
+/* 
+ * A black bootstrap 3 button.
+ * Generated with http://twitterbootstrap3buttons.w3masters.nl/?color=%23363636
+ */
+.btn-inverse {
+  background-color: #363636;
+  border-color: #363636;
+  color: #fff;
+}
+
+.btn-inverse:hover,
+.btn-inverse:focus,
+.btn-inverse:active,
+.btn-inverse.active
+  {
+  background-color: #292929;
+  border-color: #1d1d1d;
+  color: #fff;
+}
+
+/* 
+ * Picture canvas styles. 
+ */
+#picture-canvas {
+  margin-top: 10px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100%;
+  max-width: 500px;
+}
