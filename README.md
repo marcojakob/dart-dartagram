@@ -1,5 +1,7 @@
 # Dartagram
 
+[![Build Status](https://drone.io/github.com/marcojakob/dart-dartagram/status.png)](https://drone.io/github.com/marcojakob/dart-dartagram/latest)
+
 Work in progress ...
 
 
