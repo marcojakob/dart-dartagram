@@ -44,6 +44,13 @@ Work in progress ...
 * [Dart Interop Example](http://blog.sethladd.com/2014/05/i-ported-javascript-app-to-dart-heres.html)
 
 
-## Drawing on Canvas (snapchat like)
+## HTML5 Canvas Stuff
+
+### Drawing on Canvas (snapchat like)
 
 * http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app/
+
+
+### Dragging on Canvas
+
+* [A simple HTML5 Canvas dragging example using object oriented programming](http://rectangleworld.com/blog/archives/129)

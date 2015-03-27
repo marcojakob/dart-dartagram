@@ -21,10 +21,6 @@ class PictureLoader {
       
       displayScaledPicture(0);
       
-      new Stream.periodic(new Duration(milliseconds: 20), (i) => i).take(200).listen((i) {
-        displayScaledPicture(i);
-      });
-
       // Release object url.
       Url.revokeObjectUrl(picUrl);
     });

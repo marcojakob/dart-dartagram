@@ -1,7 +1,8 @@
 library dartagram;
 
 import 'dart:html';
-import 'dart:async';
+
+import 'package:dnd/dnd.dart';
 
 part 'controller/picture_loader.dart';
 part 'view/view.dart';
@@ -27,4 +28,10 @@ void main() {
   // Init views.
   pictureCanvas = new PictureCanvas();
   cameraButton = new CameraButton();
+  
+  Draggable draggable = new Draggable(pictureCanvas.canvas, horizontalOnly: true);
+  
+  draggable.onDrag.listen((event) {
+    pictureLoader.displayScaledPicture(event.startPosition.x - event.position.x);
+  });
 }

@@ -1,6 +1,8 @@
 name: dartagram
 description: A mobile photo app to learn dart programming.
 dependencies:
-  bootstrap_for_pub: any
   browser: any
-  jquery_for_pub: any
+  dnd: any
+  dart_to_js_script_rewriter: any
+transformers:
+- dart_to_js_script_rewriter
