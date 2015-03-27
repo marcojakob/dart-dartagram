@@ -21,17 +21,18 @@ CameraButton cameraButton;
  */
 void main() {
   // Init model data.
-  
+
   // Init controllers.
   pictureLoader = new PictureLoader();
-  
+
   // Init views.
   pictureCanvas = new PictureCanvas();
   cameraButton = new CameraButton();
-  
-  Draggable draggable = new Draggable(pictureCanvas.canvas, horizontalOnly: true);
-  
+
+  Draggable draggable = new Draggable(pictureCanvas.canvas);
+
   draggable.onDrag.listen((event) {
-    pictureLoader.displayScaledPicture(event.startPosition.x - event.position.x);
+    pictureLoader.displayScaledPicture(event.startPosition.x - event.position.x,
+        event.startPosition.y - event.position.y);
   });
 }
